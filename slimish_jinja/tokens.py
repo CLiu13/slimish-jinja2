@@ -1,4 +1,9 @@
 import re
+import sys
+
+if sys.version_info >= (3, 0):
+    from sys import intern
+    from functools import reduce
 
 # Default Jinja environment.
 env = {'block_start_string': '{%', 'block_end_string': '%}',

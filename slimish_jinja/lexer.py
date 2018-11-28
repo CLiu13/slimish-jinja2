@@ -60,6 +60,9 @@ class Lexer(object):
             lineno += 1
         # unindent for `html` for which no indent was recorded.
         yield IndentToken(UNINDENT, lineno, '')
+    
+    def __next__(self):
+        return self.next()
 
     def check_indent(self, line):
         """

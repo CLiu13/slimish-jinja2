@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+
 from slimish_jinja import Lexer, Parser
 
 cur_dir = os.path.dirname(os.path.realpath(__file__))
